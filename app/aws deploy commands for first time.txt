@@ -1,0 +1,81 @@
+create folder named test1
+create app folder
+create html_page folder in this create page file
+create server.js file in app folder
+run server with command in new terminal (node <server file name>)
+create package.json command (npm init)//create package.json file
+npm install express --save//add dependencies in package.json and node_modules will be created
+create Dockerfile inside app only
+create .gitignore(node_modules/)
+
+create repo in github copy the url
+open cmd in that test1 folder
+use(command) git clone url
+git add .
+git commit -m "msg"
+git push
+check repo in git hub if the files has been updated or not
+
+//open amazon aws
+create new instance 
+add settings 
+connect to the instance
+now write the following commands in the cmd
+
+
+
+// on aws ubuntu
+sudo apt update
+
+//install git
+sudo apt-get install git
+git config --global user.name "deekshasahu1994"
+git config --global user.email "deekshasahu1406@gmail.com"
+git config --global user.password "sahuDeeksha@1994"
+git config --global credential.helper store
+git config --list --show-origin
+
+//install node
+sudo apt update
+sudo apt install nodejs
+node -v
+sudo apt install npm
+
+//install docker
+sudo apt-get update
+sudo apt install docker.io
+sudo docker --version
+sudo systemctl start docker 
+sudo systemctl enable docker 
+sudo systemctl status docker 
+
+//create local folder
+mkdir dockerdemo
+cd dockerdemo/
+git clone <repo url>
+
+//login docker
+sudo docker login
+		//username:deekshasahu
+		//password:sahuDeeksha@1994
+
+//container making
+sudo docker build -t <image name> .
+
+sudo docker images
+
+//run docker
+sudo docker run -d -p 3000:3000 <docker id>
+
+//to view docker running processes
+sudo docker ps
+
+//to stop process
+sudo docker stop <container id>
+
+//remove image
+sudo docker rmi -f <image name>
+
+//to kill the process
+sudo docker kill <container id>
+
